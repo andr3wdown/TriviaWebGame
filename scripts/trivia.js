@@ -78,7 +78,7 @@ async function nextQuestion(category){
                 }
             }
             
-            sleep(2000).then(() => {
+            sleep(1500).then(() => {
                 $(`#main-content question-card`).fadeOut(1000, () => {
                     $(`#main-content question-card`).remove();
                     if (currentQuestionIndex < 10){
@@ -115,6 +115,7 @@ function end(){
         });
     });
 }
+
 function scoresScreen(){
     $("#main-content").append('<scores-card class="flex grow"></scores-card>');
     $("#main-content scores-card").fadeIn(3000);
