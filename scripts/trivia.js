@@ -81,7 +81,9 @@ async function nextQuestion(category){
 }
 
 function end(){
+    
 
+    start();
 }
 
 function determineDifficulty(){
