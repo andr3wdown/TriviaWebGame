@@ -2,6 +2,10 @@ import { GetCategories } from "./api-calls.js";
 
 let categories = [];
 categories = await GetCategories();
+if (categories == null){
+    alert("Error fetching categories. Please try again later.");
+    throw new Error("Error fetching categories. Please try again later.");
+}
 
 export function GetFourCategories(){
     let fourCategories = [];
