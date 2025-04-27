@@ -81,9 +81,19 @@ async function nextQuestion(category){
 }
 
 function end(){
-    
-
-    start();
+    $("#main-content").append('<end-card class="flex grow"></end-card>');
+    $("#main-content end-card").fadeIn(3000);
+    $("#main-content end-card #final-score").html(`${correctAnswers}/10`);
+    $("#main-content end-card #end-button").on("click", () => {
+        $("#main-content end-card").fadeOut(1000, () => {
+            $("#main-content end-card").remove();
+            $("#score").html("0/10");
+            currentQuestionIndex = 0;
+            correctAnswers = 0;
+            startScreen();
+            //add save score to local storage here
+        });
+    });
 }
 
 function determineDifficulty(){

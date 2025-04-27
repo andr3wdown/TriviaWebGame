@@ -1,5 +1,3 @@
-
-
 export class QuestionCard extends HTMLElement {
     template(){
         return /*html*/`
