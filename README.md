@@ -1,5 +1,5 @@
 # Project Title 
-The name of the Project and all authors involved
+Andr3wdowns Trivia Game By [Chong Lee](https://github.com/andr3wdown)
 
 ## Demo link:
 Access my site at [andrewdownstriviagame.netlify.app](https://andrewdownstriviagame.netlify.app/)
